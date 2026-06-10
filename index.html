@@ -385,30 +385,24 @@ body {
 <script>
 const CATEGORIES = [
   {
-    id: 'comercio-cliente',
+    id: 'negocio',
     num: '01',
-    title: 'Comercio y Relación con el Cliente',
+    title: 'Negocio',
     items: [
-      { id: 'seguimiento-ventas-mes', name: 'Seguimiento de ventas mes a mes' },
-      { id: 'comparativa-anual', name: 'Comparativa de ventas vs año anterior' },
-      { id: 'whatsapp-incidencias', name: 'WhatsApp Business · automatización de incidencias' },
-      { id: 'whatsapp-descuentos', name: 'WhatsApp Business · gestión de códigos de descuento' },
-      { id: 'whatsapp-atencion', name: 'WhatsApp Business · atención al cliente' },
-      { id: 'carritos-recuperacion', name: 'Recuperación de carritos abandonados' },
-      { id: 'segmentacion-recurrentes', name: 'Segmentación de clientes recurrentes' },
-      { id: 'comunicacion-post-compra', name: 'Comunicación post-compra' }
+      { id: 'reporting-ventas-operacion', name: 'Reporting de ventas y operación' },
+      { id: 'decks-comerciales', name: 'Decks comerciales / negocio' },
+      { id: 'whatsapp-business', name: 'WhatsApp Business' }
     ]
   },
   {
     id: 'marca-contenido',
     num: '02',
-    title: 'Marca y Contenido',
+    title: 'Marca / Contenido',
     items: [
-      { id: 'tono-pure-espana', name: 'Tono de Pure España (skill brand voice)' },
-      { id: 'newsletter', name: 'Generación de copy para newsletter' },
-      { id: 'drafts-redes', name: 'Drafts editoriales para redes sociales' },
-      { id: 'comunicacion-educativa', name: 'Comunicación educativa sobre el producto' },
-      { id: 'calendario-contenidos', name: 'Calendario de contenidos' }
+      { id: 'brand-voice', name: 'Brand Voice' },
+      { id: 'brand-visual', name: 'Brand Visual' },
+      { id: 'brand-brain', name: 'Brand Brain' },
+      { id: 'planificacion-contenidos', name: 'Planificación de contenidos' }
     ]
   },
   {
@@ -416,23 +410,19 @@ const CATEGORIES = [
     num: '03',
     title: 'Inteligencia de Mercado',
     items: [
-      { id: 'tendencias-sin-azucar', name: 'Agente de tendencias bebidas sin azúcar' },
+      { id: 'analisis-tendencias', name: 'Análisis de tendencias' },
       { id: 'monitoreo-competidores', name: 'Monitoreo de competidores' },
-      { id: 'cobertura-mediatica', name: 'Cobertura mediática y press clipping' },
-      { id: 'insights-consumidor', name: 'Insights del consumidor' }
+      { id: 'cobertura-mediatica', name: 'Cobertura mediática' }
     ]
   },
   {
-    id: 'dia-a-dia',
+    id: 'gestion-personal',
     num: '04',
-    title: 'Tu Día a Día',
+    title: 'Gestión Personal',
     items: [
-      { id: 'morning-flow', name: 'Morning flow · resumen de emails al iniciar' },
-      { id: 'resumen-calendario', name: 'Resumen del calendario del día' },
-      { id: 'tareas-laborales', name: 'Organización de tareas laborales' },
-      { id: 'tareas-personales', name: 'Organización de tareas personales' },
-      { id: 'notas-reuniones', name: 'Notas y seguimientos de reuniones' },
-      { id: 'recordatorios', name: 'Sistema de recordatorios y prioridades' }
+      { id: 'morning-flow', name: 'Morning flow' },
+      { id: 'agenda', name: 'Agenda' },
+      { id: 'notas-reuniones', name: 'Notas y seguimiento de reuniones' }
     ]
   }
 ];
@@ -444,7 +434,7 @@ const CUSTOM_CATEGORY = {
   items: []
 };
 
-const STORAGE_KEY = 'yamila-casos-uso-priorization-v1';
+const STORAGE_KEY = 'yamila-casos-uso-priorization-v2';
 
 let state = loadState();
 
